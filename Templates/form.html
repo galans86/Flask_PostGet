@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+
+{% block title %}
+{{ super() }} - {{ title }}
+{% endblock %}
+
+{% block content %}
+<div class="row">
+    <form action="/save_data" method="post">
+        <p>
+        <input type="text" name="username" placeholder="Имя"><br>
+        <input type="email" name="email" placeholder="Email"> <br>
+        <input type="submit" value="Отправить">
+        </p>
+    </form>
+</div>
+{% endblock %}
